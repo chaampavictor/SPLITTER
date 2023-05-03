@@ -39,7 +39,7 @@ const Form = ({ amount, setAmount, setTip, people, setPeople }) => {
                         );
                     })}
                     <div className="custom-wrapper">
-                        <input type="number" onInput={handleSelectedTip} id="custom" name="tip" className="number-input tip-custom" placeholder="Custom" />
+                        <input type="number" onInput={(e) => handleSelectedTip(e.target.value)} id="custom" name="tip" className="number-input tip-custom" placeholder="Custom" />
                         <label htmlFor="custom" className="tip-custom-label">Custom</label>
                     </div>
                 </div>
